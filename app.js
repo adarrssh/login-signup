@@ -2,7 +2,7 @@ const express = require('express');
 const { default: mongoose, mongo } = require('mongoose');
 const app = express();
 require("./models/user")
-const port= process.env.PORT||5000
+const port= process.env.PORT || 5000
 
 app.use(express.json())
 app.use(require('./routes/auth'))
